@@ -6,3 +6,8 @@ Projekt na cel szkolny.
   Aplikacja działa przez konsolę, czyli wszystko będzie wprowadzane tekstowo
 3. Mechanizm aplikacji
    Interakcja aplikacji z użytkownikiem polega na podaniu wyniku działania, który użytkownik wprowadził.
+Wersja 1.02a
+Nowa funkcja:
+- Obliczanie w "nieskończoność"
+Planowane funkcje:
+- Stworzenie prostego interfejsu graficznego
