@@ -11,7 +11,8 @@ Nowa funkcja:
 - Obliczanie w "nieskończoność"
 Planowane funkcje:
 - Stworzenie prostego interfejsu graficznego
-Werja 1.1a 11.03.2024:
+
+Werjsa 1.1a 11.03.2024:
 + poprawiono obliczanie, teraz obliczanie będzie bardziej wygodne
 + usunięcie zbędnych linijek linijek kodu bądź pozostawione powtarzające się
 = Przetworzenie kodu na mniejszą ilość błędów i lepszą czytelność
