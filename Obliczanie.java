@@ -1,92 +1,110 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 public class Obliczanie {
-    public static void Oblicz(){
+    public static void Oblicz() {
         Scanner writer = new Scanner(System.in);
         System.out.println("Proszę wpisać \"Oblicz\", aby wykonać obliczenie albo \"Opuść\" by wyjść z programu");
         String start = writer.next();
-    switch (start){
-        case "Oblicz":
-            Obliczanie.obliczanie1();
-            break;
-        case "oblicz":
-            Obliczanie.obliczanie1();
-            break;
-        case "Opuść":
-            break;
-        case "opuść":
-            break;
-        case "Opusc":
-            break;
-        case "opusc":
-            break;
-        default:
-            Obliczanie.Oblicz();
-    }
-    }
-    public static void obliczanie1(){
-    System.out.println("Wpisz cyfrę:");
-    Obliczanie.obliczanie2();
-    }
-    public static void obliczanie2(){
-        Scanner writer=new Scanner(System.in);
-        int i= writer.nextInt();
-        Obliczanie.znak();
-    }
-    public static void znak(){
-        Scanner writer=new Scanner(System.in);
-        System.out.println("Proszę wpisać znak lub równanie:");
-        String znak= writer.next();
-        switch (znak){
-            case "+":
-                Obliczanie.dodaj();
+        start.toLowerCase();
+        switch (start) {
+            case "oblicz":
+                Obliczanie.A();
                 break;
-            case "-":
-                Obliczanie.odejnij();
-                break;
-            case ":":
-                Obliczanie.podziel();
-                break;
-            case "/":
-                Obliczanie.podziel();
-                break;
-            case "*":
-                Obliczanie.pomnoz();
-                break;
-            case "równanie":
-                Obliczanie.rownanie();
-                break;
+            case "opuść", "opusc":
+                System.out.println("Dziękujemy za korzystanie z kalkulatora!");
+                Obliczanie.voi();
             default:
-                Obliczanie.znak();
+                Obliczanie.Oblicz();
         }
     }
-    public static void dodaj(){
+    public static void A() {
         Scanner writer=new Scanner(System.in);
-        System.out.println("Wpisz cyfrę:");
-        int o= writer.nextInt();
-        int i=o+i;
+        if (liczby.a==-0.001){
+            System.out.println("Twoja pierwsza liczba to "+liczby.c);
+            Obliczanie.Znak();
+        } else {
+            System.out.println("Wpisz pierwszą lizcbę");
+            liczby.a = writer.nextDouble();
+            Obliczanie.Znak();
+        }
+    }
+    public static void Znak(){
+        Scanner writer=new Scanner(System.in);
+        System.out.println("Wpisz znak ");
+        String y;
+        y=writer.next();
+        switch (y){
+            case "+":
+                liczby.znak=y;
+                Obliczanie.B();
+            case "-":
+                liczby.znak=y;
+                Obliczanie.B();
+            case "x","*":
+                liczby.znak="*";
+                Obliczanie.B();
+            case "/",":":
+                liczby.znak="/";
+                Obliczanie.B();
+            case "**":
+                liczby.znak=y;
+                Obliczanie.B();
+            default:
+                Obliczanie.Znak();
+        }
+    }
+    public static void B(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Wpisz drugi znak");
+        liczby.b= scanner.nextDouble();
+        Obliczanie.wynik();
+    }
+    public static void wynik(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Twój wynik działania to");
+        switch (liczby.znak){
+            case "+":
+                if (liczby.a==-0.001){
+                    liczby.c=liczby.c+liczby.b;
+                } else {
+                    liczby.c = liczby.a + liczby.b;
+                }
+                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
+                break;
+            case "-":
+                if (liczby.a==-0.001){
+                    liczby.c=liczby.c-liczby.b;
+                } else {
+                    liczby.c = liczby.a - liczby.b;
+                }
+                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
+                break;
+            case "/":
+                if (liczby.a==-0.001){
+                    liczby.c=liczby.c/liczby.b;
+                } else {
+                    liczby.c = liczby.a / liczby.b;
+                }
+                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
+                break;
+            case "*":
+                if (liczby.a==-0.001){
+                    liczby.c=liczby.c*liczby.b;
+                } else {
+                    liczby.c = liczby.a * liczby.b;
+                }
+                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
+                break;
+        }
+        String a=scanner.next();
+        a.toLowerCase();
+        if (a.equals("tak")){
+            liczby.a=-0.001;
+            Obliczanie.A();
+        } else {
+            Obliczanie.Oblicz();
+        }
+    }
+    public  static void voi(){
 
-    }
-    public static void odejnij(){
-        Scanner writer=new Scanner(System.in);
-        System.out.println("Wpisz cyfrę:");
-        int o= writer.nextInt();
-        int i=i-o;
-    }
-    public static void podziel(){
-        Scanner writer=new Scanner(System.in);
-        System.out.println("Wpisz cyfrę:");
-        int o= writer.nextInt();
-        int i=i/o;
-    }
-    public static void pomnoz(){
-        Scanner writer=new Scanner(System.in);
-        System.out.println("Wpisz cyfrę:");
-        int o= writer.nextInt();
-        int i=i*o;
-    }
-    public  static void rownanie(){
-        System.out.println("Twój wynik to"+i);
-        Obliczanie.Oblicz();
     }
 }
