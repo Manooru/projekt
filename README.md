@@ -29,3 +29,9 @@ Werjsa 1.1a 11.03.2024:
 \= Przetworzenie kodu na mniejszą ilość błędów i lepszą czytelność
 
 \- Jeden błąd związany z opuszczaniem programu, dano tymczasową poprawę
+
+Wersja 1.2a 08.04.2024:
+
+\+ dodano zabiezpieczenie przed dzieleniem przez 0.
+
+\+ cału program został zdebugowany, nie powinno być żadnych błędów.
