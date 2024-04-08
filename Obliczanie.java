@@ -11,14 +11,14 @@ public class Obliczanie {
                 break;
             case "opuść", "opusc":
                 System.out.println("Dziękujemy za korzystanie z kalkulatora!");
-                Obliczanie.voi();
+                System.exit(1);
             default:
                 Obliczanie.Oblicz();
         }
     }
     public static void A() {
         Scanner writer=new Scanner(System.in);
-        if (liczby.a==-0.001){
+        if (liczby.a==-0.0010){
             System.out.println("Twoja pierwsza liczba to "+liczby.c);
             Obliczanie.Znak();
         } else {
@@ -63,48 +63,45 @@ public class Obliczanie {
         System.out.println("Twój wynik działania to");
         switch (liczby.znak){
             case "+":
-                if (liczby.a==-0.001){
+                if (liczby.a==-0.0010){
                     liczby.c=liczby.c+liczby.b;
                 } else {
                     liczby.c = liczby.a + liczby.b;
                 }
-                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
                 break;
             case "-":
-                if (liczby.a==-0.001){
+                if (liczby.a==-0.0010){
                     liczby.c=liczby.c-liczby.b;
                 } else {
                     liczby.c = liczby.a - liczby.b;
                 }
-                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
                 break;
             case "/":
-                if (liczby.a==-0.001){
+                if (liczby.b==0) {
+                    System.out.println("Proszę wpisać inną liczbę, niż zero.");
+                    Obliczanie.B();
+                } else if (liczby.a==-0.0010){
                     liczby.c=liczby.c/liczby.b;
                 } else {
                     liczby.c = liczby.a / liczby.b;
                 }
-                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
                 break;
             case "*":
-                if (liczby.a==-0.001){
+                if (liczby.a==-0.0010){
                     liczby.c=liczby.c*liczby.b;
                 } else {
                     liczby.c = liczby.a * liczby.b;
                 }
-                System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
                 break;
         }
+        System.out.println(liczby.c+"\nCzy kontynuować? Tak/Nie");
         String a=scanner.next();
         a.toLowerCase();
         if (a.equals("tak")){
-            liczby.a=-0.001;
+            liczby.a=-0.0010;
             Obliczanie.A();
         } else {
             Obliczanie.Oblicz();
         }
-    }
-    public  static void voi(){
-
     }
 }
