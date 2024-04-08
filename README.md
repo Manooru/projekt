@@ -35,3 +35,5 @@ Wersja 1.2a 08.04.2024:
 \+ dodano zabiezpieczenie przed dzieleniem przez 0.
 
 \+ cału program został zdebugowany, nie powinno być żadnych błędów.
+
+\+ usunięto błąd z poprzedniej wersji, już nie powinno być problemów z opuszczeniem programu
