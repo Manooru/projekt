@@ -1,5 +1,7 @@
 Projekt na cel szkolny.
 
+# Można pobrać plik zip z całym projektem [tutaj](https://github.com/Manooru/projekt/tree/zip).
+
 1. Cel aplikacji
    
   Aplikacja ma na celu obliczanie działań matematycznych takich, jakich użytkownik żąda i są poprawne matematycznie.
