@@ -14,7 +14,7 @@ Projekt na cel szkolny.
   
    Interakcja aplikacji z użytkownikiem polega na podaniu wyniku działania, który użytkownik wprowadził.
    
-Wersja 1.02a
+# Wersja 1.02a
 
 Nowa funkcja:
 - Obliczanie w "nieskończoność"
@@ -22,7 +22,7 @@ Nowa funkcja:
 Planowane funkcje:
 - Stworzenie prostego interfejsu graficznego
 
-Werjsa 1.1a 11.03.2024:
+# Werjsa 1.1a 11.03.2024:
 
 \+ poprawiono obliczanie, teraz obliczanie będzie bardziej wygodne
 
@@ -32,10 +32,16 @@ Werjsa 1.1a 11.03.2024:
 
 \- Jeden błąd związany z opuszczaniem programu, dano tymczasową poprawę
 
-Wersja 1.2a 08.04.2024:
+# Wersja 1.2a 08.04.2024:
 
 \+ dodano zabiezpieczenie przed dzieleniem przez 0.
 
 \+ cału program został zdebugowany, nie powinno być żadnych błędów.
 
 \+ usunięto błąd z poprzedniej wersji, już nie powinno być problemów z opuszczeniem programu
+
+# Wersja 1.0 22.04.2024:
+
++ pierwsza pełna wersja programu
+
++  bez błędów
