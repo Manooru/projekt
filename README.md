@@ -13,7 +13,6 @@ To jest bardzo proste! Wystarczy zrobić jedynie to, co na obrazie
 2. Odpal IntelliJ i wejdź w zakładę z otwieraniem projektu.
 
 ![image](https://github.com/Manooru/projekt/assets/148362024/6cfb52f1-14a9-4d17-90d3-956771211987)
-
 ![image](https://github.com/Manooru/projekt/assets/148362024/ca332be9-6bdd-4df3-8fc4-54a52dc387b2)
 
 3. Aby włączyć program, trzeba otworzyć plik "Kalkulator.java" w projekcie i odtworzyć go
